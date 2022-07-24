@@ -1,0 +1,100 @@
+// #include <stdio.h>
+
+// void main()
+// {
+//     int n;
+
+//     scanf("%d", &n);
+//     int a[n];
+//     int a1[n];
+//     int a2[n];
+//     for(int i=0; i<n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     }
+//     for(int i=0; i<n; i++)
+//     {
+//         if(i%2==0)
+//         {
+//             a1[i]=a[i]+1;
+//             a2[i]=a[i];
+//         }
+//         else
+//         {
+//             a1[i]=a[i];
+//             a2[i]=a[i]+1;
+//         }
+        
+//     }
+//     int flag1=0, flag2=0;
+//     int flag3=0, flag4=0;
+//     for(int i=0; i<n; i++)
+//     {
+//         if(a1[i]%2==0)
+//         {
+//             flag1++;
+//         }
+//         if(a1[i]%2!=0)
+//         {
+//             flag2++;
+//         }
+        
+//         if(a2[i]%2==0)
+//         {
+//             flag3++;
+//         }
+//         if(a2[i]%2!=0)
+//         {
+//             flag4++;
+//         }
+
+//     }
+
+//     if(flag1==0 || flag2==0 || flag3==0 || flag4==0){
+//         printf("YES");
+//     }
+//     else{
+//         printf("NO");
+//     }
+
+    
+
+// }
+
+
+
+
+
+
+// #include <stdio.h>
+// void main()
+// {
+//     int n,m=2, x=3;
+//     int flag=0;
+//     scanf("%d", &n);
+//     int a[n];
+//     a[0]=1;
+//     a[1]=2;
+//     while(m<n)
+//     {
+//         for(int i=1; i<=m; i++)
+//         {
+//             if(x%a[i]==0)
+//             {
+//                 flag++;
+//             }
+//         }
+//         if(flag==0)
+//         {
+//             a[m]=x;
+//             m++;
+//         }
+//         flag=0;
+//         x++;
+//     }
+//     for(int i=0; i<=n;i++)
+//     {
+//         printf("%d ",a[i]);
+//     }
+
+// }
