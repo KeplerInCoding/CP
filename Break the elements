@@ -1,0 +1,42 @@
+#include <cstdio>
+
+
+int main() 
+{
+	int t;
+	scanf("%d",&t);
+	int a[t];
+	for(int m=0; m<t;m++)
+	{
+	    
+	    int n;
+	    scanf("%d",&n);
+	    int k[100];
+	    for(int j=0; j<n;j++)
+	    {
+	        scanf("%d",&k[j]);
+	    }
+	    
+	    int i=0;
+	    int l=n;
+	    for(int j=0;j<l;j++)
+	    {
+	        here:
+	        if(k[j]%2==0)
+	        {
+	            k[j]=k[j]/2;
+	            k[n+i]=k[j]/2;
+	            l++;
+	            i++;
+	            goto here;
+	        }
+	        
+	    }
+	    a[m]=i;
+	}
+	for(int h=0; h<t;h++)
+	{
+	    printf("%d\n", a[h]);
+	}
+	return 0;
+}
