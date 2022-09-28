@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main(void) 
+{
+	int t;
+	cin>>t;
+	int a[t];
+	for(int i=0; i<t;i++)
+	{
+	   int n;
+	   cin>>n;
+	   int k[n];
+	   for(int j=0; j<n;j++)
+	   {
+	       cin>>k[j];
+	   }
+	  
+	  for(int x=0;x<n;x++)
+	  {
+	      int m=k[x];
+	      k[x]=1;
+	      for(int y=1; y<n;y++)
+	      {
+	          if(k[y]==-1)
+	            continue;
+	           if(k[y]==m)
+	           {
+	               ++k[x];
+	               k[y]=-1;
+	           }
+	      }
+	  }
+	  int max=k[0];
+	  for(int x=1;x<n;x++)
+	  {
+	      if(k[x]>max)
+	        max=k[x];  
+	  }
+	  a[i]= n-max;
+	}
+	for(int i=0; i<t;i++)
+	{
+	cout<<a[i];
+	}
+	return 0;
+}
+
